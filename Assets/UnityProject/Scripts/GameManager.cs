@@ -1,8 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public CharacterStatSO selectedCharacter;
+    public SkillDataSO[] selectedSkills = new SkillDataSO[3];
     void Awake()
     { 
         if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); } 
@@ -12,9 +16,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
-    public void WinGame()
+    public void ReturnToMenu()
     {
-        LoadScene("WinGame");
+        LoadScene("MainMenu");
     }
     public void StartGame()
     {
@@ -32,6 +36,8 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
-    // public CharacterStatSO selectedCharacter;
-    // public SkillDataSO[] selectedSkills = new SkillDataSO[3];
+    public void WinGame()
+    {
+        LoadScene("WinGame");
+    }
 }
