@@ -1,0 +1,37 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+public class GameManager : MonoBehaviour
+{
+    public static GameManager Instance;
+    void Awake()
+    { 
+        if (Instance == null) { Instance = this; DontDestroyOnLoad(gameObject); } 
+        else Destroy(gameObject);
+    }
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+    public void WinGame()
+    {
+        LoadScene("WinGame");
+    }
+    public void StartGame()
+    {
+        LoadScene("World");
+    }
+    public void ChooseCharacter()
+    {
+        LoadScene("ChooseCharacter");
+    }
+    public void ChooseSpecialSkill()
+    {
+        LoadScene("ChooseSpecialSkill");
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    // public CharacterStatSO selectedCharacter;
+    // public SkillDataSO[] selectedSkills = new SkillDataSO[3];
+}
