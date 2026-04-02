@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1553d556320c484289405479ad8f2a8, type: 3}
   m_Name: RadialShot
   m_EditorClassIdentifier: Assembly-CSharp::SkillDataSO
-  skillName: 
-  icon: {fileID: 0}
-  type: 0
+  skillName: Radial Shot
   cooldown: 0
-  skillPrefab: {fileID: 0}
+  manaCost: 0
+  damage: 0
+  range: 0
+  speed: 0
+  vfxPrefab: {fileID: 0}
+  actions:
+  - {fileID: 11400000, guid: 4138a53c721d52b4ca9f95235569f914, type: 2}

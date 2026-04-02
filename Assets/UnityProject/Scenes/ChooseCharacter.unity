@@ -343,6 +343,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3829832238983248900, guid: 18b69db8c38df614baea8e2660069261, type: 3}
+      propertyPath: character1
+      value: 
+      objectReference: {fileID: 11400000, guid: 419e5d0d3fd87104684ccf72e95cd827, type: 2}
+    - target: {fileID: 3829832238983248900, guid: 18b69db8c38df614baea8e2660069261, type: 3}
+      propertyPath: character2
+      value: 
+      objectReference: {fileID: 11400000, guid: dbd77a4aa5961554081154c76cf6c155, type: 2}
+    - target: {fileID: 3829832238983248900, guid: 18b69db8c38df614baea8e2660069261, type: 3}
+      propertyPath: character3
+      value: 
+      objectReference: {fileID: 11400000, guid: 2df765f033e1f15449f4e0805285bc27, type: 2}
     - target: {fileID: 5359422058696816214, guid: 18b69db8c38df614baea8e2660069261, type: 3}
       propertyPath: m_Name
       value: ChooseCharacterUI

@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1553d556320c484289405479ad8f2a8, type: 3}
   m_Name: DashSkill
   m_EditorClassIdentifier: Assembly-CSharp::SkillDataSO
-  skillName: 
-  icon: {fileID: 0}
-  type: 0
+  skillName: Dash
   cooldown: 0
-  skillPrefab: {fileID: 0}
+  manaCost: 0
+  damage: 0
+  range: 5
+  speed: 5
+  vfxPrefab: {fileID: 0}
+  actions:
+  - {fileID: 11400000, guid: 959ec0a98b1977349a4478417dd4b232, type: 2}
