@@ -8,6 +8,7 @@ public class DashAction : SkillAction
     private bool isDashing = false;
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
+    [SerializeField] private Joystick joystick;
     public bool IsDashing => isDashing;
     public float DashSpeed => dashSpeed;
     public float DashDuration => dashDuration;
@@ -17,42 +18,28 @@ public class DashAction : SkillAction
             return;
         rb = user.GetComponent<Rigidbody2D>();
         spriteRenderer = user.GetComponent<SpriteRenderer>();
+        joystick = FindObjectOfType<Joystick>();
         if (rb == null)
         {
             Debug.LogError("DashAction: Player không có Rigidbody2D component!");
             return;
         }
-        user.GetComponent<MonoBehaviour>().StartCoroutine(PerformDash(user, targetPos));
+        user.GetComponent<MonoBehaviour>().StartCoroutine(PerformDash(user));
     }
-    private IEnumerator PerformDash(GameObject user, Vector3 targetPos)
+    private IEnumerator PerformDash(GameObject user)
     {
         isDashing = true;
-        Vector2 dashDirection = GetDashDirection(user, targetPos);
-        Debug.Log($"DashAction: dashDirection = {dashDirection}, magnitude = {dashDirection.magnitude}");
+        Vector2 dashDirection = new Vector2(joystick.Horizontal, joystick.Vertical);
+        if (dashDirection == Vector2.zero)
+        {
+            dashDirection = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+        }
         float startTime = Time.time;
         while (Time.time < startTime + dashDuration)
         {
-            rb.velocity = dashDirection.normalized * dashSpeed;
+            rb.MovePosition(rb.position + dashDirection.normalized * dashSpeed * Time.fixedDeltaTime);
             yield return new WaitForFixedUpdate();
         }
-        rb.velocity = Vector2.zero;
         isDashing = false;
-    }
-    private Vector2 GetDashDirection(GameObject user, Vector3 targetPos)
-    {
-        // Lấy hướng di chuyển cuối cùng từ PlayerController
-        PlayerController playerController = user.GetComponent<PlayerController>();
-        if (playerController != null)
-        {
-            return playerController.GetLastNonZeroMovement();
-        }
-        
-        // Fallback: sử dụng velocity nếu đang di chuyển
-        if (rb.velocity.magnitude > 0.1f)
-            return rb.velocity.normalized;
-        
-        if (spriteRenderer == null)
-            return Vector2.right;
-        return spriteRenderer.flipX ? Vector2.left : Vector2.right;
     }
 }

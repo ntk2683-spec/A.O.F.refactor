@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/UnityProject/Scenes/MainMenu.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
     path: Assets/UnityProject/Scenes/ChooseCharacter.unity
     guid: 38287695fdbc3344c8e2cecb84ee787c
   - enabled: 1
     path: Assets/UnityProject/Scenes/ChooseSpecialSkill.unity
     guid: bdd59dd5fd86b0d4a9dee54549f78f3a
-  - enabled: 1
-    path: Assets/UnityProject/Scenes/MainMenu.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/UnityProject/Scenes/WinGame.unity
     guid: e9e01a147b1ab4644a37f8af9fd5888d

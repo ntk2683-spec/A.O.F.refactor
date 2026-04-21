@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf691d2b28aba647ae6171e9e53d2d7, type: 3}
   m_Name: Dash Action
   m_EditorClassIdentifier: Assembly-CSharp::DashAction
+  dashSpeed: 12
+  dashDuration: 2
