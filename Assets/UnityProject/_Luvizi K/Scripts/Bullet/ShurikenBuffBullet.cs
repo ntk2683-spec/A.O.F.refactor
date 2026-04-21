@@ -20,6 +20,6 @@ public class ShurikenBuffBullet : BulletBase
                 enemyRb.AddForce(knockbackDir * knockbackForce, ForceMode2D.Impulse);
             }
         }
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

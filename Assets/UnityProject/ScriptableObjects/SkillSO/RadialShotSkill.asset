@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 644c959a4b2c5a64eac58a671b717a02, type: 3}
-  m_Name: Radial Shot Action
-  m_EditorClassIdentifier: Assembly-CSharp::RadialShotAction
-  radialBullet: {fileID: 6230581385002272505, guid: 66949a0b3e5de5f42a6a8242aabde3e0, type: 3}
-  firePos: {fileID: 0}
+  m_Name: RadialShotSkill
+  m_EditorClassIdentifier: Assembly-CSharp::RadialShotSkill
+  skillName: 
+  manaCost: 0
+  cooldown: 0
+  damage: 0
+  range: 0
+  speed: 0
+  Prefab: {fileID: 1080102379662587679, guid: ca5d9d58a530af247971fa6b9d6f25c8, type: 3}
   bulletCount: 12
-  bulletSpeed: 10
-  cooldown: 5

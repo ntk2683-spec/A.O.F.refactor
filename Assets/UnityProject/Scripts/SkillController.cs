@@ -73,7 +73,7 @@ public class SkillController : MonoBehaviour
             Debug.Log($"💙 Tiêu hao {skill.manaCost} mana");
         }
         Vector3 castPosition = targetPos ?? transform.position;
-        skill.Use(gameObject, castPosition);
+        skill.Execute(gameObject, castPosition, skill);
         skillCooldowns[index] = skill.cooldown;
         Debug.Log($"✓ Tung chiêu: {skill.skillName}");
     }

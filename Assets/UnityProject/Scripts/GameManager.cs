@@ -38,10 +38,6 @@ public class GameManager : MonoBehaviour
         if (noSkillsObj != null) noSkillsObj.SetActive(false);
         if (noBothObj != null) noBothObj.SetActive(false);
     }
-
-    /// <summary>
-    /// Tìm lại object reference từ scene hiện tại (vì GameManager persist qua scenes)
-    /// </summary>
     private void RefreshObjectReferences()
     {
         if (noCharacterObj == null)
@@ -51,59 +47,48 @@ public class GameManager : MonoBehaviour
         if (noBothObj == null)
             noBothObj = GameObject.Find("NoBoth");
     }
-
     private void ShowWarning(GameObject warningObj, float duration = 2f)
     {
         if (warningObj == null) return;
-        
         StopCoroutine(HideWarningAfterDelay(warningObj, duration));
         warningObj.SetActive(true);
         StartCoroutine(HideWarningAfterDelay(warningObj, duration));
     }
-
     private IEnumerator HideWarningAfterDelay(GameObject warningObj, float delay)
     {
         yield return new WaitForSeconds(delay);
         if (warningObj != null)
             warningObj.SetActive(false);
     }
-
     private bool ValidateSelection()
     {
         bool hasCharacter = selectedCharacter != null;
         bool hasAllSkills = selectedSkills[0] != null && selectedSkills[1] != null && selectedSkills[2] != null;
-
         if (!hasCharacter && !hasAllSkills)
         {
             ShowWarning(noBothObj);
             return false;
         }
-
         if (!hasCharacter)
         {
             ShowWarning(noCharacterObj);
             return false;
         }
-
         if (!hasAllSkills)
         {
             ShowWarning(noSkillsObj);
             return false;
         }
-
         return true;
     }
-
     public void LoadScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
-
     public void ReturnToMenu()
     {
         LoadScene("MainMenu");
     }
-
     public void StartGame()
     {
         RefreshObjectReferences();
@@ -112,22 +97,18 @@ public class GameManager : MonoBehaviour
             LoadScene("World");
         }
     }
-
     public void ChooseCharacter()
     {
         LoadScene("ChooseCharacter");
     }
-
     public void ChooseSpecialSkill()
     {
         LoadScene("ChooseSpecialSkill");
     }
-
     public void QuitGame()
     {
         Application.Quit();
     }
-
     public void WinGame()
     {
         LoadScene("WinGame");

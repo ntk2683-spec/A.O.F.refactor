@@ -343,6 +343,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4261219315043229559, guid: dd523c62e8335e845b0cc3188449db94, type: 3}
+      propertyPath: skill1
+      value: 
+      objectReference: {fileID: 11400000, guid: 63e2f1d25008c5e49ab61374b93da5f8, type: 2}
+    - target: {fileID: 4261219315043229559, guid: dd523c62e8335e845b0cc3188449db94, type: 3}
+      propertyPath: skill2
+      value: 
+      objectReference: {fileID: 11400000, guid: a05f2e913e0ff3147a435b08c9fd0ac3, type: 2}
+    - target: {fileID: 4261219315043229559, guid: dd523c62e8335e845b0cc3188449db94, type: 3}
+      propertyPath: skill3
+      value: 
+      objectReference: {fileID: 11400000, guid: 22f94a559a81c974da9627242b270a8f, type: 2}
     - target: {fileID: 4842893056074837847, guid: dd523c62e8335e845b0cc3188449db94, type: 3}
       propertyPath: m_Name
       value: ChooseSpecialSkillUI
