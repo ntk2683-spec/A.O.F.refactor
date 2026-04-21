@@ -2748,6 +2748,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1694346927629282314, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: 'skillButtons.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1420955404}
+    - target: {fileID: 1694346927629282314, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: 'skillButtons.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1230135760}
+    - target: {fileID: 1694346927629282314, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: 'skillButtons.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1508000321}
+    - target: {fileID: 5022926450409284157, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6875
+      objectReference: {fileID: 0}
+    - target: {fileID: 5022926450409284157, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5022926450409284157, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5022926450409284157, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5858684034539901133, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
       propertyPath: m_Name
       value: GameObject
@@ -2759,40 +2787,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5858684034539901133, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
-      insertIndex: 5
-      addedObject: {fileID: 28768413925460488}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
---- !u!1 &28768413925460487 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5858684034539901133, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
-  m_PrefabInstance: {fileID: 28768413925460486}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &28768413925460488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28768413925460487}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a32f79807ccb7bd4a8b404a4f61c4b22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SkillController
-  skillButtons:
-  - {fileID: 1420955404}
-  - {fileID: 1230135760}
-  - {fileID: 1508000321}
-  skillNameTexts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  cooldownTexts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

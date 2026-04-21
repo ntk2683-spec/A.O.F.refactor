@@ -19,6 +19,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float currentDEF;
     [SerializeField] private float currentSPD;
     [SerializeField] private float currentAttackCooldown;
+    private bool isDashing = false;
+    public void SetDashing(bool value)
+    {
+        isDashing = value;
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -68,6 +73,7 @@ public class PlayerController : MonoBehaviour
     }
     private void HandleMovement()
     {
+        if (isDashing) return; // 🔥 CHẶN Ở ĐÂY
         float moveHorizontal = joystick.Horizontal;
         float moveVertical = joystick.Vertical;
         movement = new Vector2(moveHorizontal, moveVertical).normalized;

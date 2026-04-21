@@ -12,7 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93709c54f4aedee4dac0f7edbb3b38b9, type: 3}
   m_Name: Character 3
   m_EditorClassIdentifier: Assembly-CSharp::CharacterDataSO
-  characterName: 
-  sprite: {fileID: 0}
-  animator: {fileID: 0}
-  stats: []
+  characterName: Robox
+  sprite: {fileID: 8943998719802223876, guid: af7203318074f5a48971b03fbdfbcb9a, type: 3}
+  animator: {fileID: 9100000, guid: 331c672cb62bca4489dab8bbf62cb4ce, type: 2}
+  stats:
+  - type: 0
+    value: 800
+  - type: 1
+    value: 1000
+  - type: 2
+    value: 500
+  - type: 3
+    value: 0
+  - type: 4
+    value: 20
+  - type: 5
+    value: 0.1

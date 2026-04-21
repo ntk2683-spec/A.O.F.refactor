@@ -7,7 +7,7 @@ public class ShieldSkill : SkillDataSO
     {
         if (data == null) return;
         Vector3 spawnPosition = user.transform.position;
-        GameObject shieldInstance = Instantiate(data.Prefab, spawnPosition, Quaternion.identity, user.transform);
-        Destroy(shieldInstance, data.cooldown);
+        GameObject shieldInstance = Instantiate(Prefab, spawnPosition, Quaternion.identity, user.transform);
+        Destroy(shieldInstance, duration);
     }
 }

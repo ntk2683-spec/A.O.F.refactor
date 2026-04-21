@@ -18,4 +18,5 @@ MonoBehaviour:
   damage: 0
   range: 0
   speed: 0
+  duration: 10
   Prefab: {fileID: 126454809663500489, guid: b24f497a36ce1304c871ef165543cb81, type: 3}
