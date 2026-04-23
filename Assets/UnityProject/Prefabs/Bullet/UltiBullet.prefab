@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4707065622887846627}
   - component: {fileID: 7383045812837637352}
   - component: {fileID: 7909424505988977983}
-  - component: {fileID: -1059706122080185438}
   m_Layer: 9
   m_Name: UltiBullet
   m_TagString: Bullet
@@ -156,19 +155,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-1059706122080185438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6230581385002272505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73cd5c3bf9da1364386f1525f5561a75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  moveSpeed: 10
-  maxRange: 5
-  damage: 100
-  knockbackForce: 10

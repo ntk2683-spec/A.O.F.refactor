@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7872238217415569941}
   - component: {fileID: 2273753695258513246}
   - component: {fileID: 6341512713266700940}
-  - component: {fileID: 1815733352148771691}
   m_Layer: 9
   m_Name: ShurikenBuffBullet
   m_TagString: Bullet
@@ -179,19 +178,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1815733352148771691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080102379662587679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f96174776b89535488127d4b038bbfe3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  moveSpeed: 15
-  maxRange: 10
-  damage: 50
-  knockbackForce: 20

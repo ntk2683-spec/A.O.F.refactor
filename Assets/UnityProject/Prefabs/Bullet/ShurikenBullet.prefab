@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1051375356453395922}
   - component: {fileID: 7872238217415569941}
   - component: {fileID: 2273753695258513246}
-  - component: {fileID: 5878999177786411384}
   - component: {fileID: 8473967646962873484}
   m_Layer: 9
   m_Name: ShurikenBullet
@@ -157,21 +156,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5878999177786411384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1080102379662587679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94fcc3418d1a2e34288b9970dd059954, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Shuriken
-  moveSpeed: 15
-  maxRange: 10
-  damage: 30
 --- !u!95 &8473967646962873484
 Animator:
   serializedVersion: 7
