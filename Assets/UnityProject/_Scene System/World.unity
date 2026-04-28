@@ -2234,9 +2234,21 @@ PrefabInstance:
       propertyPath: 'skillButtons.Array.data[2]'
       value: 
       objectReference: {fileID: 1508000321}
+    - target: {fileID: 5022926450409284157, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6757423122586612487, guid: 49569b43cac20744789893ac0a5ea133, type: 3}
+    - target: {fileID: 5022926450409284157, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5858684034539901133, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
       propertyPath: m_Name
       value: PlayerPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 7917357327258465868, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8890418224121583166, guid: 1e5f43d78d6ac894997bbd45d67cbd84, type: 3}
       propertyPath: joystick
