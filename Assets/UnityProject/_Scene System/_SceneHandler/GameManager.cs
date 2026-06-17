@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
     {
         bool hasCharacter = selectedCharacter != null;
         bool hasAllSkills = selectedSkills[0] != null && selectedSkills[1] != null && selectedSkills[2] != null;
+        
         if (!hasCharacter && !hasAllSkills)
         {
             ShowWarning(noBothObj);
